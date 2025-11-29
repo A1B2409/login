@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en'>
+  ,head>
+     <meta charset='utf-8'>
+     <meta name=viewport'
+  content='width=device-width,
+  initial-scale=1'>
+    <title>password reset</title>
+    <style>
+    body{ font-family:arial,
+sans-serif;display:flex;
+justify-content:center;
+           align-items:center;height;
+    100vh; background:#f2f4f7;}
+          .box{background;white;padding:
+    20px; border-radius: 10px;
+               box-shadow:0 4px 20px
+    rgba(0,0,0,0,1);width:300px;}
+         input{width:100%;padding:10px;
+   margin-top:10px;
+              border:1px solid #ccc;
+              border-raduis:6px;}
+          button{width:100;margin top:12px;padding:10px
+                        background:#007bff;colour:
+      white;border:none;border-raduis:
+      6px:}
+       </style>
+      </head>
+      <body>
+         <div class='box'>
+           <h2>reset password</h2>
+           <form id=enter your email:</label>
+           <input type='email' id='email'
+      placeholder='example@gmail.com'
+      required>
+              <button type='submit'>send reset
+              link</button>
+              </form>
+              <p id='msg'></p>
+            <div>
+            
+            <script>
+               const form =
+          document.getelementbyid('resetform);
+              const msg=
+         document.getelementbyid('msg');
+         
+         form.addeventlistener('submit',
+         function(event){
+                 event.preventdefault();//stops the page from refershing
+              const email=
+        document.getelementbyid('email).value;
+        
+        msg.textcontent='a reset link would be sent to:'email;
+                                  });
+                        </script>
+                      </body>
+                      </head>
+                      </html>
